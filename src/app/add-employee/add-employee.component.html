@@ -1,0 +1,7 @@
+<form [formGroup]="employeeForm" (ngSubmit)="addEmployee()">
+  <input formControlName="employeeId" placeholder="Employee ID" required />
+  <input formControlName="name" placeholder="Name" required />
+  <input formControlName="designation" placeholder="Designation" required />
+  <input formControlName="location" placeholder="location" required />
+  <button type="submit">Add Employee</button>
+</form>

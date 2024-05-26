@@ -1,0 +1,6 @@
+<!-- <div class="pdf-upload-container"> -->
+<input type="file" (change)="onFileChange($event)" accept=".pdf" />
+<button (click)="uploadPdf()">Upload PDF</button>
+<div *ngIf="showErrorMessage">An error ocurred while uploading</div>
+<div *ngIf="successfulMessage">Successfully uploaded: {{pdfFile.name}}</div>
+<!-- </div> -->

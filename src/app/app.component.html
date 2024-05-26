@@ -1,0 +1,9 @@
+<app-pdf-upload></app-pdf-upload>
+<!-- <app-pdf-viewer></app-pdf-viewer> -->
+<br /><br />
+<button (onClick)="onAddNewEmployee()">Add new Employee</button>
+<ng-container *ngIf="addNewEmployee">                                                                                       
+    <app-add-employee></app-add-employee>
+</ng-container>
+<br /><br />
+<app-employee-table></app-employee-table>
