@@ -12,8 +12,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { EmployeeService } from './services/employee.service';
 import { EmployeeTableComponent } from './employee-table/employee-table.component';
-import {MatTableModule} from '@angular/material/table';
-import {MatTabsModule} from '@angular/material/tabs'
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,7 @@ import {MatTabsModule} from '@angular/material/tabs'
     PdfUploadComponent,
     PdfViewerComponent,
     AddEmployeeComponent,
-    EmployeeTableComponent
+    EmployeeTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,9 +32,11 @@ import {MatTabsModule} from '@angular/material/tabs'
     ReactiveFormsModule,
     HttpClientModule,
     MatTableModule,
-    MatTabsModule
+    MatTabsModule,
+    MatFormFieldModule,
+    MatSelectModule,
   ],
   providers: [EmployeeService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
